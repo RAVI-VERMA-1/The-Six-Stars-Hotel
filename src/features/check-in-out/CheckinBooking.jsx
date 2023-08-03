@@ -11,7 +11,7 @@ import { useMoveBack } from "../../hooks/useMoveBack";
 import useBookingOnly from "../bookings/useBookingOnly";
 import useSettings from "../settings/useSettings";
 import Spinner from "../../ui/Spinner";
-import CheckBox from "../../ui/CheckBox";
+import CheckBox from "../../ui/Checkbox";
 import { useEffect, useState } from "react";
 import useCheckin from "./useCheckin";
 const Box = styled.div`
