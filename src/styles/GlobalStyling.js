@@ -68,7 +68,7 @@ const GlobalStyles = createGlobalStyle`
 --color-grey-700: #e5e7eb;
 --color-grey-800: #f3f4f6;
 --color-grey-900: #f9fafb;
-
+--color-input-900:#111123;
 --color-blue-100: #075985;
 --color-blue-700: #e0f2fe;
 --color-green-100: #166534;
@@ -122,12 +122,14 @@ body {
   font-size: 1.6rem;
 }
 
+
 input,
 button,
 textarea,
 select {
   font: inherit;
-  color: inherit;
+   color: inherit;
+ ${"" /* color:var(--color-grey-900); */}
 }
 
 button {
