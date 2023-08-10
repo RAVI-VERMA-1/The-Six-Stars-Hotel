@@ -20,7 +20,7 @@ const Form = styled.form`
     
   overflow: hidden;
   font-size: 1.4rem;
-  input[text] {
+  input {
     color: #000;
   }
 `;
