@@ -24,7 +24,7 @@ import Checkin from "./pages/Checkin";
 import ProtectedRoute from "./ui/ProtectedRoute";
 import { DarkModeContextProvider } from "./context/DarkModeContext";
 const queryClient = new QueryClient({
-  defaultOptions: {
+  defaultOptions: { 
     queries: {
       staleTime: 0,
     },

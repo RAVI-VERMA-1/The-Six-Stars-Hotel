@@ -38,7 +38,7 @@ function ErrorFallback({ error, resetErrorBoundary }) {
       <GlobalStyles />
       <StyledErrorFallback>
         <Box>
-          <Heading as="h1">Something went wrong dear user🤒</Heading>
+          <h1 as="h1">Something went wrong dear user🤒</h1>
         </Box>
         <Button size="large" onClick={resetErrorBoundary}>
           Try Again ? 😊

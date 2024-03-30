@@ -71,6 +71,8 @@ function BookingRow({
     "checked-out": "silver",
   };
 
+  // console.log(totalPrice);
+
   return (
     <Table.Row>
       <Cabin>{cabinName}</Cabin>
@@ -93,7 +95,7 @@ function BookingRow({
         </span>
       </Stacked>
 
-      <Tag type={statusToTagName[status]}>{status.replace("-", " ")}</Tag>
+      <Tag type={statusToTagName[status]}>{status?.replace("-", " ")}</Tag>
 
       <Amount>&#8377;{totalPrice}</Amount>
       <Modal>

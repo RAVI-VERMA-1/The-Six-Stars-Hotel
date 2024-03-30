@@ -6,6 +6,15 @@ import Input from "../../ui/Input";
 import { useForm } from "react-hook-form";
 import { useSignup } from "./useSignup";
 
+// const Input = styled.input`
+//   font-weight: 600;
+//   font-size: 16px;
+//   border: 2px solid #000;
+//   border-radius: 7px;
+//   padding: 3px 6px;
+//   margin-right: 10px;
+//   color: var(--color-input-00);
+// `;
 const FormRow = styled.div`
   display: grid;
   align-items: center;
@@ -61,15 +70,7 @@ function SignupForm() {
     <Form onSubmit={handleSubmit(onSubmit)}>
       <FormRow>
         <Label>Fullname </Label>
-        <Input
-          type="text"
-          id="fullName"
-          disabled={isLoading}
-          {...register("fullName", {
-            required: "This field is required",
-          })}
-        />
-        <Error>{errors?.fullName?.message}</Error>
+        <Input type="text" id="fullName" />
       </FormRow>
 
       <FormRow>
