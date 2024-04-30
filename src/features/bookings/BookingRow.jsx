@@ -85,7 +85,7 @@ function BookingRow({
       <Stacked>
         <span>{guestName}</span>
         <span>{email}</span>
-        <span>{nationality}</span>
+        <span>{nationality.toUpperCase()}</span>
       </Stacked>
 
       <Stacked>
