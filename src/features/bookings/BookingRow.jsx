@@ -80,7 +80,7 @@ function BookingRow({
 
       <Stacked>
         <span>{guestName}</span>
-        <span>{}</span>
+        <span>{email}</span>
         <span>{nationality}</span>
       </Stacked>
 
