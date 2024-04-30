@@ -60,6 +60,7 @@ function BookingRow({
     status,
     guests: { fullName: guestName, email },
     cabins: { name: cabinName },
+    nationality,
   },
 }) {
   const navigate = useNavigate();
@@ -80,6 +81,7 @@ function BookingRow({
       <Stacked>
         <span>{guestName}</span>
         <span>{email}</span>
+        <span>{nationality}</span>
       </Stacked>
 
       <Stacked>
