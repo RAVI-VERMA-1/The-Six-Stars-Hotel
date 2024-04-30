@@ -41,6 +41,10 @@ const Stacked = styled.div`
     color: var(--color-grey-500);
     font-size: 1.2rem;
   }
+
+  & span {
+    font-weight: 500;
+  }
 `;
 
 const Amount = styled.div`
@@ -58,9 +62,9 @@ function BookingRow({
     numGuests,
     totalPrice,
     status,
-    guests: { fullName: guestName, email },
+    guests: { fullName: guestName, email, nationality },
     cabins: { name: cabinName },
-    nationality,
+    // nationality,
   },
 }) {
   const navigate = useNavigate();
@@ -72,7 +76,7 @@ function BookingRow({
     "checked-out": "silver",
   };
 
-  // console.log(totalPrice);
+  // console.log(nationality);
 
   return (
     <Table.Row>
