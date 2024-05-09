@@ -15,7 +15,7 @@ const Img = styled.img`
 function Logo() {
   return (
     <StyledLogo>
-      The Six Stars Hotel🏨{/* <Img src="/logo-light.png" alt="Logo" /> */}
+      The Six Star Hotel🏨{/* <Img src="/logo-light.png" alt="Logo" /> */}
     </StyledLogo>
   );
 }
